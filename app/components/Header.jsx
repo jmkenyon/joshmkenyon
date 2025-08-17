@@ -60,7 +60,7 @@ const Header = () => {
           />
         </a>
         <a
-          href="/JoshuaKenyonCV.pdf"
+          href=""
           download
           className="
             px-10
