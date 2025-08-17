@@ -1,26 +1,38 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  font-family: Inter;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+/* Custom box shadows */
+.hover\:shadow-black:hover {
+  box-shadow: 4px 4px 0 #000;
+}
+.hover\:shadow-white:hover {
+  box-shadow: 4px 4px 0 #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom hover background color */
+.hover\:bg-lightHover:hover {
+  background-color: #fcf4ff;
+}
+
+.hover\:bg-darkHover:hover {
+  background-color: #2a004a;
+}
+
+/* Optional: add cursor pointer for hoverable elements */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@layer utilities {
+  .grid-cols-auto {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
