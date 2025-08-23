@@ -2,7 +2,7 @@ import { assets } from "@/public/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, setIsScroll] = useState(false);
 
   const sideMenuRef = useRef();
@@ -27,17 +27,19 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
         <Image src={assets.header_bg_color} alt="" className="w-full" />
       </div>
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
-          isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
+          isScroll
+            ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-[#11001F] dark:shadow-white/20"
+            : ""
         }`}
       >
         <a href="#top">
           <Image
-            src={assets.logo}
+            src={isDarkMode ? assets.light_logo : assets.logo}
             className="w-28 cursor-pointer mr-14"
             alt="logo image, says Josh"
           />
@@ -52,9 +54,10 @@ const Navbar = () => {
         rounded-full
         px-12
         py-3
-        ${isScroll ?
-        "" :
-        "bg-white shadow-sm bg-opacity-50"
+        ${
+          isScroll
+            ? ""
+            : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
         }
         `}
         >
@@ -79,9 +82,9 @@ const Navbar = () => {
             gap-4
         "
         >
-          <button>
+          <button onClick={() => setIsDarkMode((prev) => !prev)}>
             <Image
-              src={assets.moon_icon}
+              src={isDarkMode ? assets.sun_icon : assets.moon_icon}
               alt="Moon Icon to set to night mode"
               className="w-6"
             />
@@ -98,11 +101,17 @@ const Navbar = () => {
           border-gray-500
           rounded-full
           ml-4
+          dark:border-white/50
+
           "
             href="#contact"
           >
             Contact
-            <Image src={assets.arrow_icon} className="w-3" alt="arrow icon" />
+            <Image
+              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+              className="w-3"
+              alt="arrow icon"
+            />
           </a>
           <button
             className="
@@ -113,7 +122,7 @@ const Navbar = () => {
             onClick={openMenu}
           >
             <Image
-              src={assets.menu_black}
+              src={isDarkMode ? assets.menu_white : assets.menu_black}
               alt="menu icon for mobile devices"
               className="w-6"
             />
@@ -140,11 +149,13 @@ const Navbar = () => {
         bg-rose-50
         transition
         duration-500 
+        dark:bg-[#2a004a]
+        dark:text-white
         "
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <Image
-              src={assets.close_black}
+              src={isDarkMode ? assets.close_white : assets.close_black}
               alt="close button"
               className="w-5 cursor-pointer"
             />

@@ -35,6 +35,8 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import light_logo from './light-logo.png';
+import dailychallenge from "./dailychallenge.png";
 
 
 export const assets = {
@@ -75,6 +77,8 @@ export const assets = {
     send_icon,
     right_arrow_bold,
     right_arrow_bold_dark,
+    light_logo,
+    dailychallenge,
 
 };
 
@@ -90,6 +94,12 @@ export const projectData = [
         description: 'Building using React.js',
         bgImage: '/portfolioLogo.png',
         link:'https://www.joshmkenyon.com/'
+    },
+    {
+        title: 'Daily Challenge App',
+        description: 'An iOS app built with SwiftUI and Firebase backend',
+        bgImage: '/dailychallenge.png',
+        link:'https://apps.apple.com/gb/app/the-daily-challenge/id6741366136'
     },
     // {
     //     title: 'Photography site',
