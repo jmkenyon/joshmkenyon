@@ -84,6 +84,12 @@ export const assets = {
 
 export const projectData = [
     {
+        title: 'Aluga Vaga iOS App',
+        description: 'A React Native app for listing and finding garages in Brazil, featuring Apple/Google login, secure API, and real-time listing management.',
+        bgImage: '/alugavaga.png',
+        link: 'https://apps.apple.com/br/app/aluga-vaga/id6752393226?l=en-GB'
+    },
+    {
         title: 'Aluga Vaga',
         description: 'A garage rental marketplace built with React.js and MongoDB',
         bgImage: '/alugavaga.png',
