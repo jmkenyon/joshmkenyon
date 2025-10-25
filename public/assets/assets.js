@@ -120,6 +120,9 @@ export const projectData = [
 ]
 
 export const blogData = [
+    {   title: 'Viral Growth: How Referral Schemes Skyrocketed Marketplace Supply', 
+        description: 'I am the founder of a marketplace in Brazil for renting out garage spaces - AlugaVaga.com.br.', 
+        link: 'https://joshmkenyon.substack.com/p/viral-growth-how-referral-schemes' },
     {   title: 'How to convince sellers to sign up to your app', 
         description: 'Selling is by far the most difficult aspect of business. Even the most...', 
         link: 'https://joshmkenyon.substack.com/p/how-to-convince-sellers-to-sign-up' },
