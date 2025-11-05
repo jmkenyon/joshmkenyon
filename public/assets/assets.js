@@ -38,7 +38,6 @@ import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import light_logo from "./light-logo.png";
 import dailychallenge from "./dailychallenge.png";
 
-
 export const assets = {
   user_image,
   code_icon,
@@ -84,7 +83,8 @@ export const assets = {
 export const projectData = [
   {
     title: "Marketplace for digital products",
-    description: "Built a full-stack digital products marketplace using Next.js, React, & Stripe",
+    description:
+      "Built a full-stack digital products marketplace using Next.js, React, & Stripe",
     bgImage: "/background.png",
     link: "https://marketplace-three-liart.vercel.app/",
   },
@@ -107,7 +107,7 @@ export const projectData = [
     link: "https://www.joshmkenyon.com/",
   },
   {
-    title: "Daily Challenge App",
+    title: "Daily Challenge",
     description: "An iOS app built with SwiftUI and Firebase backend",
     bgImage: "/dailychallenge.png",
     link: "https://apps.apple.com/gb/app/the-daily-challenge/id6741366136",

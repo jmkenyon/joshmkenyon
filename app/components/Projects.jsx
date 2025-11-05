@@ -33,13 +33,13 @@ const Projects = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 0.4 }}
-        className="grid grid-cols-auto my-10 gap-5 dark:text-black"
+        className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 my-10 gap-5 dark:text-black"
       >
         {projectData.map((project, index) => (
           <a key={index} href={project.link} target="_blank">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              transition={{duration: 0.3}}
+              transition={{ duration: 0.3 }}
               key={index}
               className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
               style={{ backgroundImage: `url(${project.bgImage})` }}
