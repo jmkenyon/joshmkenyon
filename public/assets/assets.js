@@ -86,7 +86,7 @@ export const projectData = [
     description:
       "Built a full-stack digital products marketplace using Next.js, React, & Stripe",
     bgImage: "/background.png",
-    link: "https://marketplace-three-liart.vercel.app/",
+    link: "https://cryptverse.io/",
   },
   {
     title: "Aluga Vaga iOS App",
