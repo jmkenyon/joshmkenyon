@@ -82,7 +82,7 @@ export const assets = {
 
 export const projectData = [
   {
-    title: "Marketplace for digital products",
+    title: "Formara Marketplace",
     description:
       "Built a full-stack digital products marketplace using Next.js, React, & Stripe",
     bgImage: "/background.png",
@@ -112,16 +112,6 @@ export const projectData = [
     bgImage: "/dailychallenge.png",
     link: "https://apps.apple.com/gb/app/the-daily-challenge/id6741366136",
   },
-  // {
-  //     title: 'Photography site',
-  //     description: 'Web Design',
-  //     bgImage: '/work-3.png',
-  // },
-  // {
-  //     title: 'UI/UX designing',
-  //     description: 'UI/UX Design',
-  //     bgImage: '/work-4.png',
-  // },
 ];
 
 export const blogData = [
