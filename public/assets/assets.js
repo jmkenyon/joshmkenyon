@@ -116,6 +116,12 @@ export const projectData = [
 
 export const blogData = [
   {
+    title: "The Ultimate Guide to Growing Your Business",
+    description:
+      "Growing a business is painfully difficult, with many obstacles to overcome...",
+    link: "https://joshmkenyon.substack.com/p/the-ultimate-guide-to-growing-your",
+  },
+  {
     title: "Viral Growth: How Referral Schemes Skyrocketed Marketplace Supply",
     description:
       "I am the founder of a marketplace in Brazil for renting out garage spaces - AlugaVaga.com.br.",
