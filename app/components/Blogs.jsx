@@ -71,7 +71,7 @@ const Blogs = ({ isDarkMode }) => {
       <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.4 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
         href="https://joshmkenyon.substack.com/"
         className="w-max flex items-center justify-center gap-2
        text-gray-700 border-[0.5px] border-gray-700 rounded-full 
