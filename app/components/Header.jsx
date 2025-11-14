@@ -50,7 +50,7 @@ const Header = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="max-w-2xl mx-auto"
       >
-        Proficient in React, Next.js, and Tailwind CSS, I build responsive and
+        Proficient in TypeScript, JavaScript, and Tailwind CSS, I build responsive and
         user-friendly web applications that deliver exceptional user
         experiences.
       </motion.p>
