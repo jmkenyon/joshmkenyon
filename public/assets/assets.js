@@ -82,6 +82,13 @@ export const assets = {
 
 export const projectData = [
   {
+    title: "Architect Portfolio",
+    description:
+      "Developing a portfolio for an architect using TypeScript, Tailwind CSS, and react-i18next for multi-language support.",
+    bgImage: "/laura.png",
+    link: "http://lauraconsoni.com.br/",
+  },
+  {
     title: "Formara Marketplace",
     description:
       "Built a full-stack digital products marketplace using Next.js, React, & Stripe",
