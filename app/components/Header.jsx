@@ -42,7 +42,7 @@ const Header = () => {
         transition={{ duration: 0.7, delay: 0.5 }}
         className="text-3xl sm:text-6xl lg:text-[66px]"
       >
-        Passionate about scaling businesses from 0 to 1
+        A front-end developer based in the UK
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -50,7 +50,9 @@ const Header = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="max-w-2xl mx-auto"
       >
-        Bilingual founder in the UK with hands-on experience building startups
+        Proficient in React, Next.js, and Tailwind CSS, I build responsive and
+        user-friendly web applications that deliver exceptional user
+        experiences.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
