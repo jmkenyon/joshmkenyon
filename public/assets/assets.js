@@ -86,7 +86,7 @@ export const projectData = [
     description:
       "Developing a portfolio for an architect using TypeScript, Tailwind CSS, and react-i18next for multi-language support.",
     bgImage: "/laura.png",
-    link: "http://lauraconsoni.com.br/",
+    link: "https://lauraconsoni.com.br/",
   },
   {
     title: "Formara Marketplace",
