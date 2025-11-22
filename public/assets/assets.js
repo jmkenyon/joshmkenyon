@@ -95,17 +95,17 @@ export const projectData = [
     link: "https://lauraconsoni.com.br/",
   },
   {
+    title: "Aluga Vaga iOS App",
+    description: "React Native app for finding and listing garages in Brazil.",
+    bgImage: "/alugavaga.png",
+    link: "https://apps.apple.com/br/app/aluga-vaga/id6752393226?l=en-GB",
+  },
+  {
     title: "Formara Marketplace",
     description:
       "Built a full-stack digital products marketplace using Next.js, React, & Stripe",
     bgImage: "/background.png",
     link: "https://formara.com.br/",
-  },
-  {
-    title: "Aluga Vaga iOS App",
-    description: "React Native app for finding and listing garages in Brazil.",
-    bgImage: "/alugavaga.png",
-    link: "https://apps.apple.com/br/app/aluga-vaga/id6752393226?l=en-GB",
   },
 
   {
