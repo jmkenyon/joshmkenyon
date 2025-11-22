@@ -82,6 +82,12 @@ export const assets = {
 
 export const projectData = [
   {
+    title: "Aluga Vaga",
+    description: "A garage rental marketplace built with React.js and MongoDB",
+    bgImage: "/alugavaga.png",
+    link: "https://www.alugavaga.com.br/",
+  },
+  {
     title: "Architect Portfolio",
     description:
       "Developing a portfolio for an architect using TypeScript, Tailwind CSS, and react-i18next for multi-language support.",
@@ -101,12 +107,7 @@ export const projectData = [
     bgImage: "/alugavaga.png",
     link: "https://apps.apple.com/br/app/aluga-vaga/id6752393226?l=en-GB",
   },
-  {
-    title: "Aluga Vaga",
-    description: "A garage rental marketplace built with React.js and MongoDB",
-    bgImage: "/alugavaga.png",
-    link: "https://www.alugavaga.com.br/",
-  },
+
   {
     title: "This portfolio site",
     description: "Building using React.js",
