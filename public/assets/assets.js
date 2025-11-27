@@ -88,6 +88,12 @@ export const projectData = [
     link: "https://www.alugavaga.com.br/",
   },
   {
+    title: "EMS Tool Suite",
+    description: "A comprehensive log analysis and troubleshooting tool for EMS, built with React.js.",
+    bgImage: "/EMS.png",
+    link: "https://www.emstoolsuite.com/",
+  },
+  {
     title: "Architect Portfolio",
     description:
       "Developing a portfolio for an architect using TypeScript, Tailwind CSS, and react-i18next for multi-language support.",
