@@ -89,7 +89,7 @@ export const projectData = [
   },
   {
     title: "EMS Tool Suite",
-    description: "A comprehensive log analysis and troubleshooting tool for EMS, built with React.js.",
+    description: "A streamlined internal toolkit for EMS support, combining React UI with a Python API backend",
     bgImage: "/EMS.png",
     link: "https://www.emstoolsuite.com/",
   },
