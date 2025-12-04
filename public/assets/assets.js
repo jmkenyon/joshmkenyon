@@ -94,9 +94,15 @@ export const projectData = [
     link: "https://www.emstoolsuite.com/",
   },
   {
+    title: "Write Magic",
+    description: "An OpenAI-powered blog editor built with React and Next.js.",
+    bgImage: "/pencil.png",
+    link: "https://www.writemagic.io/",
+  },
+  {
     title: "Architect Portfolio",
     description:
-      "Developing a portfolio for an architect using TypeScript, Tailwind CSS, and react-i18next for multi-language support.",
+      "Developed a portfolio for an architect using TypeScript, Tailwind CSS, and react-i18next for multi-language support.",
     bgImage: "/laura.png",
     link: "https://lauraconsoni.com.br/",
   },
