@@ -88,11 +88,25 @@ export const projectData = [
     link: "https://www.alugavaga.com.br/",
   },
   {
+    title: "Formara Marketplace",
+    description:
+      "Built a full-stack digital products marketplace using Next.js, React, & Stripe",
+    bgImage: "/background.png",
+    link: "https://formara.com.br/",
+  },
+  {
     title: "EMS Tool Suite",
     description: "A streamlined internal toolkit for EMS support, combining React UI with a Python API backend",
     bgImage: "/EMS.png",
     link: "https://www.emstoolsuite.com/",
   },
+  {
+    title: "My Stoic",
+    description: "Engineered a full-stack AI journaling application with real-time analysis and feedback using Next.js, Prisma, and MongoDB.",
+    bgImage: "/marcus.png",
+    link: "https://www.mystoic.io/",
+  },
+
   {
     title: "Write Magic",
     description: "An OpenAI-powered blog editor built with React and Next.js.",
@@ -112,13 +126,7 @@ export const projectData = [
     bgImage: "/alugavaga.png",
     link: "https://apps.apple.com/br/app/aluga-vaga/id6752393226?l=en-GB",
   },
-  {
-    title: "Formara Marketplace",
-    description:
-      "Built a full-stack digital products marketplace using Next.js, React, & Stripe",
-    bgImage: "/background.png",
-    link: "https://formara.com.br/",
-  },
+
 
   {
     title: "This portfolio site",
