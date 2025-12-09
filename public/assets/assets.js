@@ -102,8 +102,8 @@ export const projectData = [
   },
   {
     title: "My Stoic",
-    description: "Engineered a full-stack AI journaling application with real-time analysis and feedback using Next.js, Prisma, and MongoDB.",
-    bgImage: "/marcus.png",
+    description: "An AI journaling app with real-time analysis and feedback using Next.js, Prisma, MongoDB, Open AI.",
+    bgImage: "/stoicio.png",
     link: "https://www.mystoic.io/",
   },
 
