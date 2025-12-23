@@ -144,41 +144,12 @@ export const projectData = [
 
 export const blogData = [
   {
-    title: "The Ultimate Guide to Growing Your Business",
-    description:
-      "Growing a business is painfully difficult, with many obstacles to overcome...",
-    link: "https://joshmkenyon.substack.com/p/the-ultimate-guide-to-growing-your",
-  },
-  {
-    title: "Viral Growth: How Referral Schemes Skyrocketed Marketplace Supply",
-    description:
-      "I am the founder of a marketplace in Brazil for renting out garage spaces - AlugaVaga.com.br.",
-    link: "https://joshmkenyon.substack.com/p/viral-growth-how-referral-schemes",
-  },
-  {
-    title: "How to convince sellers to sign up to your app",
-    description:
-      "Selling is by far the most difficult aspect of business. Even the most...",
-    link: "https://joshmkenyon.substack.com/p/how-to-convince-sellers-to-sign-up",
-  },
-  {
-    title: "Securing the Supply Side in Marketplace Growth",
-    description:
-      "Creating and growing a marketplace entails many difficulties — but ...",
-    link: "https://joshmkenyon.substack.com/p/securing-the-supply-side-in-marketplace",
-  },
-  {
-    title: "Save thousands by validating your business first!",
-    description:
-      "Do this instead of wasting thousands of dollars launching a business....",
-    link: "https://joshmkenyon.substack.com/p/save-thousands-by-validating-your",
-  },
-  {
     title: "5 Lessons on Succeeding in Business",
     description:
       "In 2024, I founded a supplement business, generating a modest £15,000...",
     link: "https://joshmkenyon.substack.com/p/5-lessons-on-succeeding-in-business",
   },
+  
 ];
 
 export const infoList = [
