@@ -85,7 +85,7 @@ export const projectData = [
     title: "BJJ Desk",
     description: "A modern SaaS platform that helps Brazilian Jiu-Jitsu gyms manage students, memberships, and payments in one place.",
     bgImage: "/bjjdesk.png",
-    link: "https://www.bjjdesk.com",
+    link: "https://bjjdesk.com",
   },
   {
     title: "Aluga Vaga",
