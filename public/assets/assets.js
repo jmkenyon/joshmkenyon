@@ -100,12 +100,12 @@ export const projectData = [
     bgImage: "/background.png",
     link: "https://formara.com.br/",
   },
-  {
-    title: "EMS Tool Suite",
-    description: "A streamlined internal toolkit for EMS support, combining React UI with a Python API backend",
-    bgImage: "/EMS.png",
-    link: "https://www.emstoolsuite.com/",
-  },
+  // {
+  //   title: "EMS Tool Suite",
+  //   description: "A streamlined internal toolkit for EMS support, combining React UI with a Python API backend",
+  //   bgImage: "/EMS.png",
+  //   link: "https://www.emstoolsuite.com/",
+  // },
   {
     title: "My Stoic",
     description: "An AI journaling app with real-time analysis and feedback using Next.js, Prisma, MongoDB, Open AI.",
@@ -131,14 +131,6 @@ export const projectData = [
     description: "React Native app for finding and listing garages in Brazil.",
     bgImage: "/alugavaga.png",
     link: "https://apps.apple.com/br/app/aluga-vaga/id6752393226?l=en-GB",
-  },
-
-
-  {
-    title: "This portfolio site",
-    description: "Building using React.js",
-    bgImage: "/portfolioLogo.png",
-    link: "https://www.joshmkenyon.com/",
   },
   {
     title: "Daily Challenge",
