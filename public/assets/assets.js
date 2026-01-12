@@ -82,17 +82,19 @@ export const assets = {
 
 export const projectData = [
   {
-    title: "BJJ Desk",
-    description: "A modern SaaS platform that helps Brazilian Jiu-Jitsu gyms manage students, memberships, and payments in one place.",
-    bgImage: "/bjjdesk.png",
-    link: "https://bjjdesk.com",
-  },
-  {
     title: "Aluga Vaga",
     description: "A garage rental marketplace built with React.js and MongoDB",
     bgImage: "/alugavaga.png",
     link: "https://www.alugavaga.com.br/",
   },
+  {
+    title: "BJJ Desk",
+    description:
+      "A modern SaaS platform that helps Brazilian Jiu-Jitsu gyms manage students, memberships, and payments in one place.",
+    bgImage: "/bjjdesk.png",
+    link: "https://bjjdesk.com",
+  },
+
   {
     title: "Formara Marketplace",
     description:
@@ -107,17 +109,24 @@ export const projectData = [
   //   link: "https://www.emstoolsuite.com/",
   // },
   {
+    title: "Write Magic",
+    description: "An OpenAI-powered blog editor built with React and Next.js.",
+    bgImage: "/pencil.png",
+    link: "https://www.writemagic.io/",
+  },
+  {
     title: "My Stoic",
-    description: "An AI journaling app with real-time analysis and feedback using Next.js, Prisma, MongoDB, Open AI.",
+    description:
+      "An AI journaling app with real-time analysis and feedback using Next.js, Prisma, MongoDB, Open AI.",
     bgImage: "/stoicio.png",
     link: "https://www.mystoic.io/",
   },
 
   {
-    title: "Write Magic",
-    description: "An OpenAI-powered blog editor built with React and Next.js.",
-    bgImage: "/pencil.png",
-    link: "https://www.writemagic.io/",
+    title: "Aluga Vaga iOS App",
+    description: "React Native app for finding and listing garages in Brazil.",
+    bgImage: "/alugavaga.png",
+    link: "https://apps.apple.com/br/app/aluga-vaga/id6752393226?l=en-GB",
   },
   {
     title: "Architect Portfolio",
@@ -125,12 +134,6 @@ export const projectData = [
       "Developed a portfolio for an architect using TypeScript, Tailwind CSS, and react-i18next for multi-language support.",
     bgImage: "/laura.png",
     link: "https://lauraconsoni.com.br/",
-  },
-  {
-    title: "Aluga Vaga iOS App",
-    description: "React Native app for finding and listing garages in Brazil.",
-    bgImage: "/alugavaga.png",
-    link: "https://apps.apple.com/br/app/aluga-vaga/id6752393226?l=en-GB",
   },
   {
     title: "Daily Challenge",
@@ -147,7 +150,6 @@ export const blogData = [
       "In 2024, I founded a supplement business, generating a modest £15,000...",
     link: "https://joshmkenyon.substack.com/p/5-lessons-on-succeeding-in-business",
   },
-  
 ];
 
 export const infoList = [
