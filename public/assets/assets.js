@@ -88,11 +88,11 @@ export const projectData = [
     link: "https://www.alugavaga.com.br/",
   },
   {
-    title: "BJJ Desk",
+    title: "BJJ Mat",
     description:
-      "A modern SaaS platform that helps Brazilian Jiu-Jitsu gyms manage students, memberships, and payments in one place.",
-    bgImage: "/bjjdesk.png",
-    link: "https://bjjdesk.com",
+      "A full-stack booking platform for Brazilian Jiu-Jitsu gyms and visitors, featuring drop-in payments, Stripe Connect, role-based dashboards, and automated email flows.",
+    bgImage: "/bjjmat.png",
+    link: "https://bjjmat.io",
   },
 
   {
@@ -102,17 +102,25 @@ export const projectData = [
     bgImage: "/background.png",
     link: "https://formara.com.br/",
   },
-  // {
-  //   title: "EMS Tool Suite",
-  //   description: "A streamlined internal toolkit for EMS support, combining React UI with a Python API backend",
-  //   bgImage: "/EMS.png",
-  //   link: "https://www.emstoolsuite.com/",
-  // },
+  {
+    title: "EMS Tool Suite",
+    description:
+      "A streamlined internal toolkit for EMS support, combining React UI with a Python API backend",
+    bgImage: "/EMS.png",
+    link: "https://www.emstoolsuite.com/",
+  },
   {
     title: "Write Magic",
     description: "An OpenAI-powered blog editor built with React and Next.js.",
     bgImage: "/pencil.png",
     link: "https://www.writemagic.io/",
+  },
+  {
+    title: "BJJ Desk",
+    description:
+      "A modern SaaS platform that helps Brazilian Jiu-Jitsu gyms manage students, memberships, and payments in one place.",
+    bgImage: "/bjjdesk.png",
+    link: "https://bjjdesk.com",
   },
   {
     title: "My Stoic",
