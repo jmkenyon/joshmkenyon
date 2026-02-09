@@ -90,7 +90,7 @@ export const projectData = [
   {
     title: "BJJ Mat",
     description:
-      "A full-stack booking platform for Brazilian Jiu-Jitsu gyms and visitors, featuring drop-in payments, Stripe Connect, role-based dashboards, and automated email flows.",
+      "A full-stack marketplace for Brazilian Jiu-Jitsu drop-in classes, feauturing Stripe connect, RBAC.",
     bgImage: "/bjjmat.png",
     link: "https://bjjmat.io",
   },
