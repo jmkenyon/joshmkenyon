@@ -94,6 +94,13 @@ export const projectData = [
     bgImage: "/bjjmat.png",
     link: "https://bjjmat.io",
   },
+  {
+    title: "Your Timer",
+    description: "B2B countdown timer platform with multi-tenant architecture and real-time synchronization",
+    bgImage: "/yourtimer.png",
+    link: "https://yourtimer.io"
+  },
+
 
   {
     title: "Formara Marketplace",
@@ -157,6 +164,12 @@ export const blogData = [
     description:
       "In 2024, I founded a supplement business, generating a modest £15,000...",
     link: "https://joshmkenyon.substack.com/p/5-lessons-on-succeeding-in-business",
+  },
+  {
+    title: "How to Build a Successful Marketplace Business in 2026",
+    description:
+      "Anyone can build a marketplace business. It’s easy. But building a successful one?...",
+    link: "https://joshmkenyon.substack.com/p/how-to-build-a-successful-marketplace",
   },
 ];
 
