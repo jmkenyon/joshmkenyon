@@ -5,71 +5,63 @@ import { motion } from "motion/react";
 
 const Projects = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      id="projects"
-      className="w-full px-[12%] py-10 scroll-mt-20"
-    >
-      <motion.h4
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className="text-center mb-2 text-lg"
-      >
-        Here's a showcase of what I've built using code.
-      </motion.h4>
-      <motion.h2
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
-        className="text-center text-5xl"
-      >
-        My projects
-      </motion.h2>
+    <div id="projects" className="w-full px-[8%] md:px-[12%] py-20 scroll-mt-10 bg-slate-50 dark:bg-zinc-950">
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h4 className="text-sm font-semibold tracking-widest text-blue-600 uppercase mb-3 dark:text-blue-400">
+            Portfolio
+          </h4>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">
+            Selected Works
+          </h2>
+        </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.4 }}
-        className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 my-10 gap-5 dark:text-black"
-      >
-        {projectData.map((project, index) => (
-          <a key={index} href={project.link} target="_blank">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-              key={index}
-              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-              style={{ backgroundImage: `url(${project.bgImage})` }}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectData.map((project, index) => (
+            <motion.a 
+              key={index} 
+              href={project.link} 
+              target="_blank"
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              className="group relative block rounded-2xl overflow-hidden bg-white shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 dark:bg-zinc-900 dark:border-zinc-800"
             >
-              <div
-                className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 
-            -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500
-            group-hover:bottom-7
-            "
-              >
-                <div>
-                  <h2 className="font-semibold">{project.title}</h2>
-                  <p className="text-sm text-gray-700">{project.description}</p>
-                </div>
-                <div
-                  className="border rounded-full border-black w-9 h-9
-              aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition "
-                >
-                  <Image
-                    src={assets.send_icon}
-                    alt="send icon"
-                    className="w-5"
-                  />
+              <div 
+                className="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                style={{ backgroundImage: `url(${project.bgImage})` }}
+              />
+              <div className="p-6 relative bg-white dark:bg-zinc-900">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+                      {project.description}
+                    </p>
+                  </div>
+                  <div className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center flex-shrink-0 group-hover:bg-slate-900 transition-colors duration-300 dark:bg-zinc-800 dark:group-hover:bg-white">
+                    <Image
+                      src={assets.send_icon}
+                      alt="view"
+                      className="w-4 opacity-50 group-hover:invert transition-all dark:invert dark:group-hover:invert-0"
+                    />
+                  </div>
                 </div>
               </div>
-            </motion.div>
-          </a>
-        ))}
-      </motion.div>
-    </motion.div>
+            </motion.a>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 

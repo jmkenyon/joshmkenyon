@@ -1,41 +1,37 @@
 @import "tailwindcss";
 
-*{
-  font-family: Inter;
-}
-
-
-/* Custom box shadows */
-.hover\:shadow-black:hover {
-  box-shadow: 4px 4px 0 #000;
-}
-.hover\:shadow-white:hover {
-  box-shadow: 4px 4px 0 #fff;
-}
-
-/* Custom hover background color */
-.hover\:bg-lightHover:hover {
-  background-color: #fcf4ff;
-}
-
-.hover\:bg-darkHover:hover {
-  background-color: #2a004a;
-}
-
-/* Optional: add cursor pointer for hoverable elements */
-.cursor-pointer {
-  cursor: pointer;
-}
-
-@layer utilities {
-  .grid-cols-auto {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
+/* 1. Base Typography & Rendering
+  Added antialiasing. This is a secret weapon for premium UI—it makes 
+  Inter look significantly crisper and thinner on high-res displays. 
+*/
+* {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
+  /* Prevents layout shift when scrollbars appear */
+  scrollbar-gutter: stable; 
 }
 
+/* 2. Custom Utilities 
+  Kept your grid-auto setup, as it's a great responsive pattern!
+*/
+@layer utilities {
+  .grid-cols-auto {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* 3. Theme Variants
+  Retained your v4 dark mode variant setup.
+*/
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Note: I removed the custom hover backgrounds and hard-offset shadows. 
+  The components now rely on Tailwind's native, soft-diffused shadows 
+  (e.g., hover:shadow-xl) and semantic colors (bg-slate-50) for a much 
+  lighter, cleaner feel.
+*/

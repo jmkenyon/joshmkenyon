@@ -5,116 +5,111 @@ import { motion } from "motion/react";
 
 const Contact = () => {
   const [result, setResult] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setIsSubmitting(true);
+    setResult("Sending message...");
     const formData = new FormData(event.target);
-
     formData.append("access_key", "9566e749-5c4f-4ee8-bfee-e87b43e9bda5");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
 
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+      if (data.success) {
+        setResult("Thanks! I'll be in touch soon.");
+        event.target.reset();
+      } else {
+        setResult(data.message);
+      }
+    } catch (error) {
+      setResult("Something went wrong. Please try again.");
     }
+    setIsSubmitting(false);
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      id="contact"
-      className="w-full px-[12%] py-10 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center
-    bg-[length:90%_auto] dark:bg-none"
-    >
-      <motion.h4
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className="text-center mb-2 text-lg"
-      >
-        Drop me a message.
-      </motion.h4>
-      <motion.h2
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
-        className="text-center text-5xl"
-      >
-        Get in touch
-      </motion.h2>
-      <motion.form
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.3 }}
-        onSubmit={onSubmit}
-        className="max-w-2xl mx-auto"
-      >
-        <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
-          <motion.input
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.4 }}
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white
-            dark:bg-[#2a004a]/30 dark:border-white/90 "
-            type="text"
-            placeholder="Enter your name"
-            required
-            name="name"
-          />
-          <motion.input
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.3 }}
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white
-            dark:bg-[#2a004a]/30 dark:border-white/90 "
-            type="email"
-            placeholder="Enter your email"
-            required
-            name="email"
-          />
-        </div>
-        <motion.textarea
-          initial={{ y: 100, opacity: 0 }}
+    <div id="contact" className="w-full px-[8%] md:px-[12%] py-24 scroll-mt-10 bg-slate-50 dark:bg-zinc-950">
+      <div className="max-w-3xl mx-auto">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.3 }}
-          rows="6"
-          placeholder="Enter your message"
-          className="w-full p-4 outline-none border-[0.5px]
-        border-gray-400 rounded-md bg-white mb-6
-            dark:bg-[#2a004a]/30 dark:border-white/90 "
-          required
-          name="message"
-        ></motion.textarea>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-          type="submit"
-          className="py-3 px-8 w-max flex items-center justify-between
-        gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500
-        dark:bg-transparent dark:border-[0.5px] dark:hover:bg-[#2a004a]"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
         >
-          Submit
-          <Image
-            src={assets.right_arrow_white}
-            alt="white arrow icon"
-            className="w-4"
-          />
-        </motion.button>
-        <p className="mt-4">{result}</p>
-      </motion.form>
-    </motion.div>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight mb-4">
+            Let's build together
+          </h2>
+          <p className="text-slate-500 dark:text-slate-400 text-lg">
+            Have a project in mind? Drop me a line.
+          </p>
+        </motion.div>
+
+        <motion.form
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          onSubmit={onSubmit}
+          className="bg-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 dark:bg-zinc-900 dark:border-zinc-800"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Name</label>
+              <input
+                className="w-full px-4 py-3.5 outline-none rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 transition-all dark:bg-zinc-800 dark:border-zinc-700 dark:focus:border-blue-400"
+                type="text"
+                placeholder="John Doe"
+                required
+                name="name"
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Email</label>
+              <input
+                className="w-full px-4 py-3.5 outline-none rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 transition-all dark:bg-zinc-800 dark:border-zinc-700 dark:focus:border-blue-400"
+                type="email"
+                placeholder="john@example.com"
+                required
+                name="email"
+              />
+            </div>
+          </div>
+          
+          <div className="flex flex-col gap-2 mb-8">
+            <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Message</label>
+            <textarea
+              rows="5"
+              placeholder="Tell me about your project..."
+              className="w-full px-4 py-3.5 outline-none rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 transition-all resize-none dark:bg-zinc-800 dark:border-zinc-700 dark:focus:border-blue-400"
+              required
+              name="message"
+            ></textarea>
+          </div>
+
+          <button
+            disabled={isSubmitting}
+            type="submit"
+            className="w-full md:w-auto px-10 py-4 bg-slate-900 text-white font-medium rounded-xl flex items-center justify-center gap-2 hover:bg-slate-800 active:scale-[0.98] transition-all disabled:opacity-70 disabled:cursor-not-allowed dark:bg-white dark:text-zinc-900 dark:hover:bg-slate-100"
+          >
+            {isSubmitting ? "Sending..." : "Send Message"}
+            {!isSubmitting && <Image src={assets.right_arrow_white} alt="arrow" className="w-4 dark:invert" />}
+          </button>
+          
+          {result && (
+            <p className="mt-6 text-center text-sm font-medium text-slate-600 dark:text-slate-400">
+              {result}
+            </p>
+          )}
+        </motion.form>
+      </div>
+    </div>
   );
 };
 

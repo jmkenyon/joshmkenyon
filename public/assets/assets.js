@@ -160,16 +160,22 @@ export const projectData = [
 
 export const blogData = [
   {
+    title: "How Companies Are Getting AI Integration Wrong",
+    description:
+      "AI has transformed all aspects of society. None more, however, than workplace... ",
+    link: "https://www.joshmkenyon.com/p/how-companies-are-getting-ai-integration",
+  },
+  {
     title: "5 Lessons on Succeeding in Business",
     description:
       "In 2024, I founded a supplement business, generating a modest £15,000...",
-    link: "https://joshmkenyon.substack.com/p/5-lessons-on-succeeding-in-business",
+    link: "https://www.joshmkenyon.com/p/5-lessons-on-succeeding-in-business",
   },
   {
     title: "How to Build a Successful Marketplace Business in 2026",
     description:
       "Anyone can build a marketplace business. It’s easy. But building a successful one?...",
-    link: "https://joshmkenyon.substack.com/p/how-to-build-a-successful-marketplace",
+    link: "https://www.joshmkenyon.com/p/how-to-build-a-successful-marketplace",
   },
 ];
 
