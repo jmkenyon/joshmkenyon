@@ -97,7 +97,7 @@ export const projectData = [
   {
     title: "Your Timer",
     description: "B2B countdown timer platform with multi-tenant architecture and real-time synchronization",
-    bgImage: "/yourtimer.png",
+    bgImage: "/yourtimer2.png",
     link: "https://yourtimer.io"
   },
   {
