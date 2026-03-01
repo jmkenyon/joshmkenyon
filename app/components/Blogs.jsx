@@ -56,7 +56,7 @@ const Blogs = ({ isDarkMode }) => {
 
         <div className="flex justify-center mt-12">
           <a
-            href="https://joshmkenyon.substack.com/"
+            href="https://joshmkenyon.com/"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-slate-50 text-slate-700 font-medium hover:bg-slate-100 transition-colors border border-slate-200 dark:bg-zinc-900 dark:border-zinc-800 dark:text-slate-300 dark:hover:bg-zinc-800"
           >
             View all on Substack

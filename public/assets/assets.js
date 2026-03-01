@@ -173,16 +173,22 @@ export const blogData = [
     link: "https://www.joshmkenyon.com/p/how-companies-are-getting-ai-integration",
   },
   {
-    title: "5 Lessons on Succeeding in Business",
+    title: "Only fools and geniuses build new ideas",
     description:
-      "In 2024, I founded a supplement business, generating a modest £15,000...",
-    link: "https://www.joshmkenyon.com/p/5-lessons-on-succeeding-in-business",
+      "It’s natural to think that your idea will be the next big thing.... ",
+    link: "https://www.joshmkenyon.com/p/only-fools-and-geniuses-build-new",
   },
   {
     title: "How to Build a Successful Marketplace Business in 2026",
     description:
       "Anyone can build a marketplace business. It’s easy. But building a successful one?...",
     link: "https://www.joshmkenyon.com/p/how-to-build-a-successful-marketplace",
+  },
+  {
+    title: "5 Lessons on Succeeding in Business",
+    description:
+      "In 2024, I founded a supplement business, generating a modest £15,000...",
+    link: "https://www.joshmkenyon.com/p/5-lessons-on-succeeding-in-business",
   },
 ];
 
