@@ -100,6 +100,13 @@ export const projectData = [
     bgImage: "/yourtimer.png",
     link: "https://yourtimer.io"
   },
+  {
+    title: "Josh Bot",
+    description:
+      "A fun, personalised AI bot that helps with SaaS ideation and AI questions.",
+    bgImage: "/josh.png",
+    link: "https://www.joshmkenyonbot.com/",
+  },
 
 
   {
