@@ -48,7 +48,7 @@ const Header = () => {
         transition={{ duration: 0.4, delay: 0.2 }}
         className="max-w-2xl mx-auto text-slate-500 dark:text-slate-400 text-lg sm:text-xl leading-relaxed mt-2"
       >
-        Front-end developer based in the UK. Proficient in React, Python, and Tailwind CSS. I build aesthetic, user-centric web applications.
+        Product engineer based in the UK. Proficient in React, Python, and Tailwind CSS. I build responsive, end-to-end web applications.
       </motion.p>
 
       <motion.div 
