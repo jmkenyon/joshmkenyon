@@ -117,6 +117,13 @@ export const projectData = [
     link: "https://formara.com.br/",
   },
   {
+    title: "Fixplainer",
+    description:
+      "An AI explainer tool that breaks down FIX messages.",
+    bgImage: "/fixplainer.png",
+    link: "https://fixplainer.com",
+  },
+  {
     title: "EMS Tool Suite",
     description:
       "A streamlined internal toolkit for EMS support, combining React UI with a Python API backend",
