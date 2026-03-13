@@ -82,6 +82,12 @@ export const assets = {
 
 export const projectData = [
   {
+    title: "Maquete.ai",
+    description: "An AI platform for generating architectural images",
+    bgImage: "/maquete.png",
+    link: "https://maquete.ai/",
+  },
+  {
     title: "Aluga Vaga",
     description: "A garage rental marketplace built with React.js and MongoDB",
     bgImage: "/alugavaga.png",
